@@ -1,20 +1,9 @@
 {
 	"$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
 	"vcs": {
-		"enabled": true,
 		"clientKind": "git",
-		"useIgnoreFile": true,
-		"defaultBranch": "main"
-	},
-	"assist": {
-		"actions": {
-			"source": {
-				"useSortedKeys": {
-					"options": {
-						"sortOrder": "natural"
-					}
-				}
-			}
-		}
+		"defaultBranch": "main",
+		"enabled": true,
+		"useIgnoreFile": true
 	}
 }
