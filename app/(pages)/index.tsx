@@ -1,5 +1,6 @@
 import { Link } from "expo-router";
-import { Text, View } from "react-native";
+import { View } from "react-native";
+import { Test } from "@/components/Test";
 
 export default function Index() {
 	return (
@@ -13,7 +14,7 @@ export default function Index() {
 			{process.env.EXPO_PUBLIC_STORYBOOK_ENABLED === "true" ? (
 				<Link href="/(storybook)">Open Storybook</Link>
 			) : (
-				<Text>Hello World (storybook disabled)</Text>
+				<Test title="Hello World" />
 			)}
 		</View>
 	);
