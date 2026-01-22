@@ -6,6 +6,12 @@ const {
 	withStorybook,
 } = require("@storybook/react-native/metro/withStorybook");
 
-module.exports = withStorybook(defaultConfig, {
+const { withNativeWind } = require("nativewind/metro");
+
+const storybookConfig = withStorybook(defaultConfig, {
 	enabled: process.env.EXPO_PUBLIC_STORYBOOK_ENABLED === "true",
 });
+
+const config = withNativeWind(storybookConfig, { input: "./global.css" });
+
+module.exports = config;

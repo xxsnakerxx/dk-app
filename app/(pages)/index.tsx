@@ -4,17 +4,11 @@ import { Test } from "@/components/Test";
 
 export default function Index() {
 	return (
-		<View
-			style={{
-				flex: 1,
-				justifyContent: "center",
-				alignItems: "center",
-			}}
-		>
+		<View className="flex-1 justify-center items-center">
 			{process.env.EXPO_PUBLIC_STORYBOOK_ENABLED === "true" ? (
 				<Link href="/(storybook)">Open Storybook</Link>
 			) : (
-				<Test title="Hello World" />
+				<Test title="Hello Nativewind!!!" />
 			)}
 		</View>
 	);

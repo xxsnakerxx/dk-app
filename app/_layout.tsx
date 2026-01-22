@@ -1,3 +1,5 @@
+import "../global.css";
+
 import { Stack } from "expo-router";
 
 const StorybookEnabled = process.env.EXPO_PUBLIC_STORYBOOK_ENABLED === "true";
