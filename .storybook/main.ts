@@ -8,6 +8,13 @@ const config: StorybookConfig = {
 		"@storybook/addon-a11y",
 		"@storybook/addon-docs",
 	],
-	framework: "@storybook/react-native-web-vite",
+	framework: {
+		name: "@storybook/react-native-web-vite",
+		options: {
+			pluginReactOptions: {
+				jsxImportSource: "nativewind",
+			},
+		},
+	},
 };
 export default config;
