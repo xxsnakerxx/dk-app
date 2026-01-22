@@ -36,7 +36,7 @@ yarn-error.*
 # typescript
 *.tsbuildinfo
 
-app-example
+.rnstorybook/storybook.requires.ts
 
 # generated native folders
 /ios
