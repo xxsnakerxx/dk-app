@@ -2,18 +2,20 @@ import type { Meta, StoryObj } from "@storybook/react-native-web-vite";
 
 import { Test } from "./index";
 
-const meta: Meta<typeof Test> = {
+const meta = {
 	title: "Test",
 	component: Test,
-};
+} satisfies Meta<typeof Test>;
 
 export default meta;
 
-export const Default: StoryObj<typeof Test> = {
+type Story = StoryObj<typeof meta>;
+
+export const Default: Story = {
 	args: {},
 };
 
-export const WithTitle: StoryObj<typeof Test> = {
+export const WithTitle: Story = {
 	args: {
 		title: "Hello World",
 	},
